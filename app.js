@@ -12,7 +12,6 @@ app.controller('MainCtrl', [
     '$scope', 
     'posts',
     function($scope, posts){
-        $scope.test = 'Hello World!';
         $scope.posts = posts.posts;
         $scope.addPost = function() {
             if (!$scope.title || $scope.title === '') {return;}
